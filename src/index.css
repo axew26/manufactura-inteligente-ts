@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+div.cardTest{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

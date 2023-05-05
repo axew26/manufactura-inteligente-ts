@@ -1,0 +1,42 @@
+@keyframes quitar-color {
+    from {
+        filter:grayscale(0%);
+    }
+    to{
+        filter:grayscale(100%)
+    }
+}
+@keyframes devolver-color {
+    from {
+        filter:grayscale(100%);
+    }
+    to{
+        filter:grayscale(0%)
+    }
+}
+
+div.tarjeta-investigador
+div.contenedor-imagen {
+    background-color: #C7C7C7;
+    mix-blend-mode: multiply;
+    filter:grayscale(100%);
+}
+
+div.tarjeta-investigador
+div.contenedor-imagen:not(:hover) {
+    animation: quitar-color 1s;
+    animation-fill-mode: forwards;
+}
+
+div.tarjeta-investigador
+div.contenedor-imagen:hover {
+    animation: devolver-color 1s;
+    animation-fill-mode: forwards;
+}
+
+div.tarjeta-investigador
+div.contenedor-imagen
+img.foto-investigador {
+    height: 100%;
+    width: 100%;
+}
