@@ -40,3 +40,14 @@ img.foto-investigador {
     height: 100%;
     width: 100%;
 }
+
+div.tarjeta-investigador
+hr {
+    width: 277px;
+    height: 10px;
+    position: relative;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C2D500;
+}

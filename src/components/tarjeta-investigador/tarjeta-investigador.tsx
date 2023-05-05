@@ -6,6 +6,7 @@ export default function TarjetaInvestigador() {
             <div className='h-[50%] contenedor-imagen'>
                 <img className="foto-investigador" src="/mock_investigador.png" alt="mock" />
             </div>
+            <hr />
             <div className='h-[50%] contenedor-informacion p-3'>
                 <h2 className='text-2xl'>ana isabel oviedo carrascal, phd</h2>
                 <p className='mt-4 text-base leading-7'>Investigadora Principal UPB</p>
