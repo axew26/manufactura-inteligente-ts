@@ -4,7 +4,7 @@ export default function Root() {
   return (
     <>
       <div className="cardTest">
-      <CardProyecto></CardProyecto>
+        <CardProyecto />
       </div>
     </>
   );
