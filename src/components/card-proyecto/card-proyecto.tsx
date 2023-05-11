@@ -1,24 +1,30 @@
 import './card-proyecto.css';
-import eafitLogo from '../../assets/Logo_EAFIT.png';
+import { Card } from '../../types/card-proyecto.type';
 
-export default function CardProyecto() {
+export default function CardProyecto(props:Record<string,unknown>) {
+
+    const card:Card = props?.card as Card;
+
+    const [objetivo, descripcion] = card.descripcion.split(': ');
+
     return(
         <div className='card-proyecto'>
             <div className='contenedor-informacion'>
-                <h1 className='numero-card'>1</h1>
-                <h3 className='titulo-card'>Analítica Descriptiva y Predictiva del Proceso Productivo de Cemento y Concreto</h3>
+                <h1 className='numero-card'>{card.numero}</h1>
+                <h3 className='titulo-card'>{card.titulo}</h3>
                 <br />
-                <p>
-                    <strong>Objetivo:</strong> Estudiar el proceso productivo de cemento y concreto en la empresa Cementos Argos, mediante técnicas de aprendizaje estadístico aplicadas a los datos históricos, para el descubrimiento de patrones y variables relevantes que permitan identificar las combinaciones adecuadas que producen los valores nominales con menor dispersión.
+                <p className='descripcion-card'>
+                    <strong>{objetivo}: </strong> {descripcion}
                 </p>
             </div>
-            <hr />
+            
             <div className='contenedor-lider'>
+                <hr />
                 <h3>
                     <strong>Lidera:</strong>
                 </h3>
-                <a href="https://www.eafit.edu.co" target="_blank">
-                    <img className='' src={eafitLogo} alt="" />
+                <a href={card.urlSitio} target="_blank">
+                    <img className='' src={card.urlImagen} alt="" />
                 </a>
             </div>
         </div>
