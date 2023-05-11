@@ -1,10 +1,10 @@
 import { Investigador, Titulo } from '../../types/tarjeta-investigador.type';
 import './tarjeta-investigador.css';
 
-export default function TarjetaInvestigador(props:Record<string,any>) {
-    const investigador:Investigador = props?.investigador;
+export default function TarjetaInvestigador(props:Record<string,unknown>) {
+    const investigador:Investigador = props?.investigador as Investigador;
 
-    let titulosView:any;
+    let titulosView:JSX.Element;
 
     if(typeof investigador.titulos === 'string') {
         titulosView = <p className='mt-2 text-base leading-7'>{investigador.titulos}</p>;
