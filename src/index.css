@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 div.cardTest{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     align-items: center;
 }
