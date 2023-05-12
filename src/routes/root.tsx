@@ -1,7 +1,11 @@
+import Header from "../components/header/header";
+
 export default function Root() {
-    return (
-      <>
-       <div><p>Prueba de que react router funciona</p></div>
-      </>
-    );
-  }
+  return (
+    <>
+      <div className="header">
+        <Header></Header>
+      </div>
+    </>
+  );
+}

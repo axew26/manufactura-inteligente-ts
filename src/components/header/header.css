@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("../../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("../../fonts/Inter/static/Inter-Black.ttf") format("truetype");
+}
+* {
+  font-family: "Inter";
+}
+
+.main-header {
+  color: #021D49;
+  width: auto;
+  height: 96px;
+  background: #000000;
+}
+
+div.menu-header span {
+  margin: auto;
+}
+
+/*# sourceMappingURL=header.css.map */
