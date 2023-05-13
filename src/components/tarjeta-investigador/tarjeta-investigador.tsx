@@ -1,5 +1,5 @@
 import { Investigador, Titulo } from '../../types/tarjeta-investigador.type';
-import './tarjeta-investigador.css';
+import './tarjeta-investigador.scss';
 
 export default function TarjetaInvestigador(props:Record<string,unknown>) {
     const investigador:Investigador = props?.investigador as Investigador;
