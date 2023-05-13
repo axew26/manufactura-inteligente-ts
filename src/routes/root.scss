@@ -1,0 +1,63 @@
+div.grid-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    height: 500px;
+
+    &:nth-child(n) {
+      background-color:cadetblue;
+    }
+
+    &:nth-child(2n) {
+      background-color: antiquewhite;
+    }
+  }
+
+  @media (max-width: 625px) {
+    display: none;
+  }
+}
+
+section {
+  max-width: 600px;
+
+  @media (min-width: 625px) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    & :nth-child(n) {
+      img {
+        background-color: cadetblue;
+      }
+    }
+
+    & :nth-child(even) {
+      img {
+        background-color: antiquewhite;
+      }
+    }
+  }
+
+  div.swiper {
+    & :nth-child(n) {
+      img {
+        background-color: cadetblue;
+      }
+    }
+
+    & :nth-child(even) {
+      img {
+        background-color: antiquewhite;
+      }
+    }
+  }
+}
