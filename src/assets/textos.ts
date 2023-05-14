@@ -11,14 +11,14 @@ export const cards: Card[] = [
     {
         numero:"2",
         titulo:"Aplicación de la Tecnología IoT en la Producción de Concreto",
-        descripcion:"Objetivo: diseñar una infraestructura de sensado, mediante la aplicación de IoT, para el monitoreo del proceso de producción del concreto.",
+        descripcion:"Objetivo: Diseñar una infraestructura de sensado, mediante la aplicación de IoT, para el monitoreo del proceso de producción del concreto.",
         urlImagen:"/Logo_UPB.png",
         urlSitio:"https://www.upb.edu.co/es/home"
     },
     {
         numero:"3",
         titulo:"Manufactura Inteligente de Cemento y Concreto",
-        descripcion:"Objetivo: desarrollar modelos predictivos para la formulación de concretos, usando técnicas de Inteligencia Artificial, para la reducción de la incertidumbre en las principales propiedades de desempeño del concreto (fraguados, resistencias, asentamiento).",
+        descripcion:"Objetivo: Desarrollar modelos predictivos para la formulación de concretos, usando técnicas de Inteligencia Artificial, para la reducción de la incertidumbre en las principales propiedades de desempeño del concreto (fraguados, resistencias, asentamiento).",
         urlImagen:"/Logo_UPB.png",
         urlSitio:"https://www.upb.edu.co/es/home"
     }

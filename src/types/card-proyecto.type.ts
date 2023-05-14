@@ -1,4 +1,4 @@
-export interface Card {
+export interface Proyecto {
     numero: string;
     titulo: string;
     descripcion: string;
