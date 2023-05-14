@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./colores.scss";
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("fonts/Inter/static/Inter-Black.ttf") format("truetype");
+}
+
+* {
+  font-family: "Inter";
+}
+
+div.cardComponent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+}
