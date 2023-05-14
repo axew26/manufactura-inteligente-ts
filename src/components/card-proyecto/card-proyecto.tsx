@@ -1,5 +1,5 @@
 import "./card-proyecto.scss";
-import { Proyecto } from "../../types/card-proyecto.type";
+import { Proyecto } from "../../types/proyecto.type";
 
 export default function CardProyecto(props: Record<string, unknown>) {
 

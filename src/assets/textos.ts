@@ -1,6 +1,6 @@
-import { Card } from "../types/card-proyecto.type"
+import { Proyecto } from "../types/proyecto.type"
 
-export const cards: Card[] = [
+export const proyectos: Proyecto[] = [
     {
         numero:"1",
         titulo:"Analítica Descriptiva y Predictiva del Proceso Productivo de Cemento y Concreto",
