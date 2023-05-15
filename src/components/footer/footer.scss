@@ -1,0 +1,37 @@
+@import "../../colores.scss";
+
+footer.footer-container {
+  div.entidades-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin: 30px;
+      img.argos-footer {
+        width: 183.33px;
+        height: 79.8px;
+        position: relative;
+        bottom: 10px;
+      }
+      img.upb-footer {
+        width: 106.94px;
+        height: 36.91px;
+      }
+      img.minciencias-footer {
+        width: 288.84px;
+        height: 60.94px;
+        filter: grayscale(100%);
+      }
+    }
+    hr {
+      height: 66px;
+      width: 1px;
+      background-color: $color-azul;
+    }
+  }
+  div.recuadro-footer{
+    height: 22px;
+    background-color: $color-verde;
+  }
+}
