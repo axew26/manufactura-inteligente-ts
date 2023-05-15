@@ -1,0 +1,83 @@
+@import "../../colores.scss";
+
+@keyframes quitar-color {
+  from {
+    filter: grayscale(0%);
+  }
+  to {
+    filter: grayscale(100%);
+  }
+}
+@keyframes devolver-color {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
+
+div.tarjeta-investigador {
+  background-color: $color-blanco;
+  div.contenedor-imagen {
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+
+    &:not(:hover) {
+      animation: quitar-color 1s;
+      animation-fill-mode: forwards;
+    }
+
+    &:hover {
+      animation: devolver-color 1s;
+      animation-fill-mode: forwards;
+    }
+
+    img.foto-investigador {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  hr {
+    width: 277px;
+    height: 10px;
+    position: relative;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-verde;
+  }
+
+  div.contenedor-informacion {
+    padding: 0px 20px;
+    h2 {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin:  0 0 20px 0;
+      color: $color-azul;
+    }
+
+    p.titulo{
+      font-weight: 900;
+      color: $color-azul;
+    }
+
+    ul {
+      list-style: disc;
+      margin: 0 0 0 30px;
+      li {
+        color: $color-azul;
+        line-height: 20px;
+        font-size: 1rem;
+        
+      }
+    }
+
+    div.contacto {
+      color: $color-gris-oscuro;
+    }
+  }
+}
