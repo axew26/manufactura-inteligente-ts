@@ -1,4 +1,4 @@
-export interface Titulos {
+export interface HeaderTitulos {
     titulo1: string;
     titulo2: string;
     titulo3: string;

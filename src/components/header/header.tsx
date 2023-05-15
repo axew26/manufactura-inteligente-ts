@@ -1,9 +1,9 @@
 import "./header.scss";
-import { Titulos } from "../../types/header.type";
+import { HeaderTitulos } from "../../types/header.type";
 import { useState } from "react";
 
 export default function Header(props: Record<string, unknown>) {
-  const header = props.header as Titulos;
+  const header = props.header as HeaderTitulos;
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showAlternateImage, setShowAlternateImage] = useState(false);
 
