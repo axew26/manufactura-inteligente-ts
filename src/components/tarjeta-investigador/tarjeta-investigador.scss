@@ -1,3 +1,5 @@
+@import "../../colores.scss";
+
 @keyframes quitar-color {
   from {
     filter: grayscale(0%);
@@ -16,8 +18,8 @@
 }
 
 div.tarjeta-investigador {
+  background-color: $color-blanco;
   div.contenedor-imagen {
-    background-color: #c7c7c7;
     mix-blend-mode: multiply;
     filter: grayscale(100%);
 
@@ -44,6 +46,38 @@ div.tarjeta-investigador {
     top: -8px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #c2d500;
+    background-color: $color-verde;
+  }
+
+  div.contenedor-informacion {
+    padding: 0px 20px;
+    h2 {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin:  0 0 20px 0;
+      color: $color-azul;
+    }
+
+    p.titulo{
+      font-weight: 900;
+      color: $color-azul;
+    }
+
+    ul {
+      list-style: disc;
+      margin: 0 0 0 30px;
+      li {
+        color: $color-azul;
+        line-height: 20px;
+        font-size: 1rem;
+        
+      }
+    }
+
+    div.contacto {
+      color: $color-gris-oscuro;
+    }
   }
 }
