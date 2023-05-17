@@ -27,3 +27,31 @@ div.cardComponent {
   align-items: center;
 }
 
+
+div.cardTest{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-azul;
+}
+
+
+h2 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin:  0 0 20px 0;
+  color: $color-azul;
+}
+
+button {
+  height: 43px;
+  width: 157px;
+  background-color: $color-verde;
+  color: $color-azul;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+}
