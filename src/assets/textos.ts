@@ -1,6 +1,6 @@
 import { HeaderTitulos } from "../types/header.type";
 
-export const titulosMenu: HeaderTitulos[] = [
+export const headerTitulos: HeaderTitulos[] = [
     {
         titulo1: "Descipción de la creación de los modelos",
         titulo2: "Predicción de resistencia a la comprensión y asentamiento",
