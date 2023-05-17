@@ -19,3 +19,11 @@
 * {
   font-family: "Inter";
 }
+
+div.cardComponent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+}
+
