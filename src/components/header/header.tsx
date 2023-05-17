@@ -4,12 +4,14 @@ import { useState } from "react";
 
 export default function Header(props: Record<string, unknown>) {
   const header = props.header as HeaderTitulos;
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [showAlternateImage, setShowAlternateImage] = useState(false);
+  const [selectedTitle, setSelectedTitle] = useState('');
 
-  const handleClickImage = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-    setShowAlternateImage(!showAlternateImage);
+  const titleActivate = (title: string) => {
+    if (selectedTitle === title) {
+      setSelectedTitle('');
+    } else {
+      setSelectedTitle(title);
+    }
   };
 
   return (
@@ -17,23 +19,27 @@ export default function Header(props: Record<string, unknown>) {
       <nav>
         <ul>
           <li>
-            <a href="#" onClick={handleClickImage}>
+            <a href="#" onClick= {() => titleActivate("titulo1")}
+            style={{
+              fontWeight: selectedTitle === 'titulo1' ? "500" : "400"
+            }}
+            >
               {header.titulo1}
             </a>
-            {showAlternateImage ? (
+            {selectedTitle === 'titulo1' ? (
               <img
                 src="/Flecha_Menu_Arriba.svg"
                 alt=""
-                onClick={handleClickImage}
+                onClick={() => titleActivate('titulo1')}
               />
             ) : (
               <img
                 src="/Flecha_Menu.svg"
                 alt=""
-                onClick={handleClickImage}
+                onClick={() => titleActivate("titulo1")}
               />
             )}
-            {isDropdownOpen && (
+            {selectedTitle === 'titulo1' && (
               <div className="dropdown-menu-container">
                 <ul className="dropdown-menu">
                   <li>
@@ -53,16 +59,36 @@ export default function Header(props: Record<string, unknown>) {
             )}
           </li>
           <li>
-            <a href="#">{header.titulo2}</a>
+            <a href="#" 
+            onClick={() => titleActivate("titulo2")}
+            style={{
+              fontWeight: selectedTitle === 'titulo2' ? '500' : '400',
+            }}
+            >{header.titulo2}</a>
           </li>
           <li>
-            <a href="#">{header.titulo3}</a>
+            <a href="#"
+            onClick={() => titleActivate("titulo3")}
+            style={{
+              fontWeight: selectedTitle === 'titulo3' ? '500' : '400',
+            }}
+            >{header.titulo3}</a>
           </li>
           <li>
-            <a href="#">{header.titulo4}</a>
+            <a href="#"
+            onClick={() => titleActivate("titulo4")}
+            style={{
+              fontWeight: selectedTitle === 'titulo4' ? '500' : '400',
+            }}
+            >{header.titulo4}</a>
           </li>
           <li>
-            <a href="#">{header.titulo5}</a>
+            <a href="#"
+            onClick={() => titleActivate("titulo5")}
+            style={{
+              fontWeight: selectedTitle === 'titulo5' ? '500' : '400',
+            }}
+            >{header.titulo5}</a>
           </li>
         </ul>
       </nav>

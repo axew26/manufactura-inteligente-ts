@@ -7,7 +7,7 @@ header.menu-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: $color-letra;
+  color: $color-azul;
   nav {
     ul {
       display: flex;
@@ -16,7 +16,6 @@ header.menu-header {
         padding: 20px;
         display: flex;
         align-items: center;
-
         a {
           display: flex;
           font-size: 14px;
