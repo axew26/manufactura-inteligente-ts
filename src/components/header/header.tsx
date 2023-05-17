@@ -4,11 +4,11 @@ import { useState } from "react";
 
 export default function Header(props: Record<string, unknown>) {
   const header = props.header as HeaderTitulos;
-  const [selectedTitle, setSelectedTitle] = useState('');
+  const [selectedTitle, setSelectedTitle] = useState("");
 
   const titleActivate = (title: string) => {
     if (selectedTitle === title) {
-      setSelectedTitle('');
+      setSelectedTitle("");
     } else {
       setSelectedTitle(title);
     }
@@ -19,18 +19,20 @@ export default function Header(props: Record<string, unknown>) {
       <nav>
         <ul>
           <li>
-            <a href="#" onClick= {() => titleActivate("titulo1")}
-            style={{
-              fontWeight: selectedTitle === 'titulo1' ? "500" : "400"
-            }}
+            <a
+              href="#"
+              onClick={() => titleActivate("titulo1")}
+              style={{
+                fontWeight: selectedTitle === "titulo1" ? "500" : "400",
+              }}
             >
               {header.titulo1}
             </a>
-            {selectedTitle === 'titulo1' ? (
+            {selectedTitle === "titulo1" ? (
               <img
                 src="/Flecha_Menu_Arriba.svg"
                 alt=""
-                onClick={() => titleActivate('titulo1')}
+                onClick={() => titleActivate("titulo1")}
               />
             ) : (
               <img
@@ -39,7 +41,7 @@ export default function Header(props: Record<string, unknown>) {
                 onClick={() => titleActivate("titulo1")}
               />
             )}
-            {selectedTitle === 'titulo1' && (
+            {selectedTitle === "titulo1" && (
               <div className="dropdown-menu-container">
                 <ul className="dropdown-menu">
                   <li>
@@ -58,40 +60,57 @@ export default function Header(props: Record<string, unknown>) {
               </div>
             )}
           </li>
+          <hr />
           <li>
-            <a href="#" 
-            onClick={() => titleActivate("titulo2")}
-            style={{
-              fontWeight: selectedTitle === 'titulo2' ? '500' : '400',
-            }}
-            >{header.titulo2}</a>
+            <a
+              href="#"
+              onClick={() => titleActivate("titulo2")}
+              style={{
+                fontWeight: selectedTitle === "titulo2" ? "500" : "400",
+              }}
+            >
+              {header.titulo2}
+            </a>
           </li>
+          <hr />
           <li>
-            <a href="#"
-            onClick={() => titleActivate("titulo3")}
-            style={{
-              fontWeight: selectedTitle === 'titulo3' ? '500' : '400',
-            }}
-            >{header.titulo3}</a>
+            <a
+              href="#"
+              onClick={() => titleActivate("titulo3")}
+              style={{
+                fontWeight: selectedTitle === "titulo3" ? "500" : "400",
+              }}
+            >
+              {header.titulo3}
+            </a>
           </li>
+          <hr />
           <li>
-            <a href="#"
-            onClick={() => titleActivate("titulo4")}
-            style={{
-              fontWeight: selectedTitle === 'titulo4' ? '500' : '400',
-            }}
-            >{header.titulo4}</a>
+            <a
+              href="#"
+              onClick={() => titleActivate("titulo4")}
+              style={{
+                fontWeight: selectedTitle === "titulo4" ? "500" : "400",
+              }}
+            >
+              {header.titulo4}
+            </a>
           </li>
+          <hr />
           <li>
-            <a href="#"
-            onClick={() => titleActivate("titulo5")}
-            style={{
-              fontWeight: selectedTitle === 'titulo5' ? '500' : '400',
-            }}
-            >{header.titulo5}</a>
+            <a
+              href="#"
+              onClick={() => titleActivate("titulo5")}
+              style={{
+                fontWeight: selectedTitle === "titulo5" ? "500" : "400",
+              }}
+            >
+              {header.titulo5}
+            </a>
           </li>
         </ul>
       </nav>
+      <img src="/Menu-Mobile.svg" alt="" className="menu-imagen" />
     </header>
   );
 }
