@@ -1,67 +1,71 @@
+import { BannerModelo } from "../../types/banner-descarga.type";
 import "./banner-descarga.scss";
 
 export default function BannerDescarga(props: Record<string, unknown>) {
-  return (
-    <>
-      <div
-        className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-        style={{ maxWidth: "636px" }}
-      >
-        <div className="contenedor-titulo flex justify-start">
-          <h2 className="text-xl">Manual de usuario del sitio web</h2>
-        </div>
-        <hr />
-        <div className="contenedor-boton">
-          <button>Descargar</button>
-        </div>
-      </div>
+  let banner: BannerModelo | BannerModelo[];
+  let bannerView: JSX.Element;
 
-      <br />
-
-      <div
-        className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-        style={{ maxWidth: "486px" }}
-      >
-        <div className="contenedor-titulo">
-          <h2 className="text-xl">Documento de diseño de innovación</h2>
-        </div>
-        <hr />
-        <div className="contenedor-boton">
-          <button>Descargar</button>
-        </div>
-      </div>
-
-      <br />
-
+  if (Array.isArray(props.banner)) {
+    banner = props.banner as BannerModelo[];
+    bannerView = (
       <div className="doble-banner-descarga flex flex-col md:flex-row">
         <div
           className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-          style={{ maxWidth: "486px" }}
+          style={{ maxWidth: `${banner[0].maxWidth}px` }}
         >
           <div className="contenedor-titulo">
-            <h2 className="text-xl">Documento de diseño de innovación</h2>
+            <h2 className="text-xl">{banner[0].texto}</h2>
           </div>
           <hr />
           <div className="contenedor-boton">
-            <button>Descargar</button>
+            <button>
+              <a href={banner[0].urlDescarga} download>
+                Descargar
+              </a>
+            </button>
           </div>
         </div>
         <div className="separador-banners">
-          <hr  />
+          <hr />
         </div>
         <div
           className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-          style={{ maxWidth: "486px" }}
+          style={{ maxWidth: `${banner[1].maxWidth}px` }}
         >
           <div className="contenedor-titulo">
-            <h2 className="text-xl">Documento de diseño de innovación</h2>
+            <h2 className="text-xl">{banner[1].texto}</h2>
           </div>
           <hr />
           <div className="contenedor-boton">
-            <button>Descargar</button>
+            <button>
+              <a href={banner[1].urlDescarga} download>
+                Descargar
+              </a>
+            </button>
           </div>
         </div>
       </div>
-    </>
-  );
+    );
+  } else {
+    banner = props.banner as BannerModelo;
+    bannerView = (
+      <div
+        className="banner-descarga flex flex-col justify-center items-center md:flex-row"
+        style={{ maxWidth: `${banner.maxWidth}px` }}
+      >
+        <div className="contenedor-titulo flex justify-start">
+          <h2 className="text-xl">{banner.texto}</h2>
+        </div>
+        <hr />
+        <div className="contenedor-boton">
+          <button>
+            <a href={banner.urlDescarga} download>
+              Descargar
+            </a>
+          </button>
+        </div>
+      </div>
+    );
+  }
+  return <>{bannerView}</>;
 }
