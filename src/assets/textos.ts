@@ -114,7 +114,7 @@ export const proyectos: Proyecto[] = [
 
 export const headerTitulos: HeaderTitulos[] = [
     {
-        titulo1: "Descipción de la creación de los modelos",
+        titulo1: "Descripción de la creación de los modelos",
         titulo2: "Predicción de resistencia a la comprensión y asentamiento",
         titulo3: "Predicción de resistencia a la flexión",
         titulo4: "Predicción de conjunto de datos en Excel",
