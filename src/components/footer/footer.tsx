@@ -8,17 +8,17 @@ export default function Footer(props: Record<string, unknown>) {
     <footer className="footer-container">
       <div className="entidades-container">
         <a href={footer.urlSitioArgos} target="_blank">
-          <img src={footer.urlImagenArgos} alt="" className="argos-footer" />
+          <img src={footer.urlImagenArgos} alt="Logo Cementos Argos" className="argos-footer" />
         </a>
         <hr />
         <a href={footer.urlSitioUPB} target="_blank">
-          <img src={footer.urlImagenUPB} alt="" className="upb-footer" />
+          <img src={footer.urlImagenUPB} alt="Logo Universidad Pontificia Bolivariana" className="upb-footer" />
         </a>
         <hr />
         <a href={footer.urlSitioMinciencias} target="_blank">
           <img
             src={footer.urlImagenMinciencias}
-            alt=""
+            alt="Logo Minciencias"
             className="minciencias-footer"
           />
         </a>
