@@ -4,6 +4,7 @@ div.banner-descarga {
     background-color: $color-gris-claro;
     min-width: 80px;
     padding: 10px 20px 12px 20px;
+    width: 100%;
 
     h2 {
         margin: 0;
@@ -11,6 +12,7 @@ div.banner-descarga {
 
         @media (max-width:768px) {
             text-align: center;
+            max-width: 80%;
         }
     }
 
