@@ -1,6 +1,7 @@
 import { HeaderTitulos } from "../types/header.type";
 import { Investigador } from "../types/tarjeta-investigador.type";
 import { Proyecto } from "../types/proyecto.type";
+import { EntidadesFooter } from "../types/footer.type";
 
 export const investigadores: Investigador[] = [
   {
@@ -37,18 +38,18 @@ export const investigadores: Investigador[] = [
     urlImagen: "/mock_investigador.png",
     nombre: "NATHALIA ANDREA ORTEGA",
     titulos: [
-        {
-            nombre: 'Ingeniera de Sistemas',
-            resaltar: false,
-        },
-        {
-            nombre: 'Ingeniera en Ciencia de Datos',
-            resaltar: false,
-        },
-        {
-            nombre: 'Joven Investigadora',
-            resaltar: true,
-        },
+      {
+        nombre: "Ingeniera de Sistemas",
+        resaltar: false,
+      },
+      {
+        nombre: "Ingeniera en Ciencia de Datos",
+        resaltar: false,
+      },
+      {
+        nombre: "Joven Investigadora",
+        resaltar: true,
+      },
     ],
     contacto: "nathalia.ortega@upb.edu.co",
   },
@@ -56,18 +57,18 @@ export const investigadores: Investigador[] = [
     urlImagen: "/mock_investigador.png",
     nombre: "CAROLINA ZULUAGA ÁLVAREZ",
     titulos: [
-        {
-            nombre: 'Ingeniera Eléctrica',
-            resaltar: false,
-        },
-        {
-            nombre: 'Ingeniera Eléctronica',
-            resaltar: false,
-        },
-        {
-            nombre: 'Joven Investigadora',
-            resaltar: true,
-        },
+      {
+        nombre: "Ingeniera Eléctrica",
+        resaltar: false,
+      },
+      {
+        nombre: "Ingeniera Eléctronica",
+        resaltar: false,
+      },
+      {
+        nombre: "Joven Investigadora",
+        resaltar: true,
+      },
     ],
     contacto: "carolina.zuluagaa@upb.edu.co",
   },
@@ -75,14 +76,14 @@ export const investigadores: Investigador[] = [
     urlImagen: "/mock_investigador.png",
     nombre: "ESTEBANA OROZCO RAMÍREZ",
     titulos: [
-        {
-            nombre: 'Ingeniera de Telecomunicaciones',
-            resaltar: false,
-        },
-        {
-            nombre: 'Estudiante de Maestría',
-            resaltar: true,
-        },
+      {
+        nombre: "Ingeniera de Telecomunicaciones",
+        resaltar: false,
+      },
+      {
+        nombre: "Estudiante de Maestría",
+        resaltar: true,
+      },
     ],
     contacto: "estebana.orozco@upb.edu.co",
   },
@@ -125,3 +126,14 @@ export const headerTitulos: HeaderTitulos[] = [
         subtitulo4: "Resultados de resistencia a la flexión"
     },
 ]
+
+export const entidades: EntidadesFooter[] = [
+  {
+    urlImagenArgos: "/Logo_Argos.svg",
+    urlSitioArgos: "https://argos.co/",
+    urlImagenUPB: "/Logo_UPB.svg",
+    urlSitioUPB: "https://www.upb.edu.co/es/home",
+    urlImagenMinciencias: "/Logo_Minciencias.svg",
+    urlSitioMinciencias: "https://minciencias.gov.co/",
+  },
+];
