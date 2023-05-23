@@ -1,6 +1,7 @@
 import { HeaderTitulos } from "../types/header.type";
 import { Investigador } from "../types/tarjeta-investigador.type";
 import { Proyecto } from "../types/proyecto.type";
+import { ParrafoBannerHome } from "../types/hero-banner.type";
 
 export const investigadores: Investigador[] = [
   {
@@ -124,4 +125,10 @@ export const headerTitulos: HeaderTitulos[] = [
         subtitulo3: "Resultados de resistencia a la flexión",
         subtitulo4: "Resultados de resistencia a la flexión"
     },
+]
+
+export const parrafoBannerHome: ParrafoBannerHome[] = [
+  {
+    parrafo: "Dentro de la convocatoria 852-2019 CONVOCATORIA DE PROGRAMAS CONECTANDO CONOCIMIENTO 2019 del Ministerio de Ciencia, Tecnología e Innovación de Colombia, se suscribió el Programa TRANSFORMACIÓN DIGITAL DE LA PRODUCCIÓN DE CEMENTO CONCRETO, donde participan ARGOS, Universidad Pontificia Bolivariana y Universidad EAFIT. El programa está conformado por 3 proyectos que se describen a continuación."
+  }
 ]

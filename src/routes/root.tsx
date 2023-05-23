@@ -1,9 +1,7 @@
-import HeroBanner from "../components/hero-banner/hero-banner";
-
 export default function Root() {
   return (
     <>
-     <HeroBanner></HeroBanner>
+     <div><p>Prueba de que react router funciona</p></div>
     </>
   );
 }
