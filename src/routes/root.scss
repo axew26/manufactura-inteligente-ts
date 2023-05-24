@@ -1,0 +1,54 @@
+@import "../colores.scss";
+
+section.swiper-1 {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0px 43px 0px;
+}
+
+section.section-titulo-resultados {
+    margin: 40px 0px;
+  div.div-titulo-resultados {
+    display: flex;
+    justify-content: center;
+    h2.titulo-resultados {
+        font-size: 30px;
+        color: $color-verde;
+        max-width: 560px;
+        line-height: 36px;
+        margin: 0;
+        @media (max-width: 760px) {
+          font-size: 28px;
+          line-height: 34px;
+          text-align: center;
+          max-width: 65%;
+        }
+    }
+  }
+}
+
+section.section-investigadores{
+  background-color: $color-azul;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  div.div-titulo-investigadores{
+    margin: 40px;
+    h2.titulo-investigadores {
+      font-size: 30px;
+      color: $color-blanco;
+      max-width: 560px;
+      line-height: 36px;
+      margin: 0;
+      @media (max-width: 760px) {
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+      }
+  }
+}
+}

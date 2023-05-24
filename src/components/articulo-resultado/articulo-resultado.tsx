@@ -13,7 +13,6 @@ export default function ArticuloResultadoChild(props: Record<string, unknown>) {
     throw new Error("el segundo elemento debe de ser un section");
   }
 
-  console.log(props);
   return (
     <>
       <div className="contenedor-ariticulo-resultado">

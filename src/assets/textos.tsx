@@ -3,6 +3,7 @@ import { Investigador } from "../types/tarjeta-investigador.type";
 import { Proyecto } from "../types/proyecto.type";
 import { EntidadesFooter } from "../types/footer.type";
 import { ArticuloResultadoModelo } from "../types/articulo-resultado.type";
+import { SeparadorHomeModelo } from "../types/separador-home.type";
 
 export const investigadores: Investigador[] = [
   {
@@ -325,3 +326,14 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
     ]
   },
 ];
+
+export const separadorHome: SeparadorHomeModelo = {
+  urlImagen: '/argos_1.png',
+  texto:<p>Este sitio web presenta los resultados del proyecto <br></br>
+  <strong>3 - Manufactura Inteligente de Cemento y Concreto</strong>, donde se crearon modelos predictivos del desempeño del concreto.</p>,
+  bannerDescarga: {
+    texto: 'Manual de usuario del sitio web',
+    urlDescarga: '',
+    maxWidth: 636
+  }
+}

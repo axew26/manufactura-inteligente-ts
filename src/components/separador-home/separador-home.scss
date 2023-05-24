@@ -4,6 +4,7 @@ div.separador-home {
   background-color: $color-azul;
   display: flex;
   justify-content: center;
+  position: relative;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -17,12 +18,12 @@ div.separador-home {
     z-index: 1;
     top: 0;
     right: 0;
-    bottom: 97%;
+    bottom: 90%;
     left: 0;
     background: $color-blanco;
 
     @media (max-width: 768px) {
-      bottom: 93%;
+      bottom: 85%;
     }
   }
 
@@ -30,9 +31,9 @@ div.separador-home {
     content: "";
     position: absolute;
     z-index: 1;
-    top: 36%;
+    top: 94%;
     right: 0;
-    bottom: 59%;
+    bottom: 0%;
     left: 0;
     background: $color-blanco;
 
