@@ -4,6 +4,7 @@ div.container-banner {
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: -1;
 
   img.banner-home-mobile {
     display: none;

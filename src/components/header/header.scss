@@ -2,13 +2,16 @@
 
 header.menu-header {
   position: sticky;
-  margin: 30px;
+  top: 0;
+  z-index: 2000;
+  padding: 30px 0px 0px 0px;
   height: 96px;
   line-height: 19.36px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: $color-azul;
+  background-color: $color-blanco;
 
   img.menu-imagen {
     display: none;
@@ -45,12 +48,16 @@ header.menu-header {
         div.dropdown-menu-container {
           display: flex;
           position: absolute;
+          top: 80%;
           margin: 0;
+          z-index: 1000;
+          
           ul.dropdown-menu {
             width: 250px;
             display: flex;
             flex-direction: column;
             position: absolute;
+            background-color: $color-blanco;
           }
           @media (max-width: 1090px) {
             ul.dropdown-menu {
@@ -73,9 +80,9 @@ header.menu-header {
 @media (max-width: 768px) {
   header.menu-header {
     position: sticky;
-    margin: 30px 30px 30px 30px !important;
+    padding: 30px 30px 30px 30px !important;
     height: 48px;
-    width: 89%;
+    min-width: 430px;
     line-height: 19.36px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
     display: flex;
@@ -89,7 +96,6 @@ header.menu-header {
     width: 27px;
     height: 15px;
     display: flex !important;
-    margin-right: 20px;
     position: absolute;
     bottom: 17px;
     cursor: pointer;
@@ -98,7 +104,7 @@ header.menu-header {
     display: flex;
     background-color: $color-azul;
     position: relative;
-    top: 48px;
+    top: 30px;
     border-radius: 2px;
     ul {
       padding: 10px;
@@ -126,12 +132,13 @@ header.menu-header {
         }
         div.dropdown-menu-container {
           position: relative !important;
-          margin: 0 !important;
+          top: 0 !important;
           ul.dropdown-menu {
             width: 250px !important;
             position: relative !important;
             padding: 10px 15px 10px 15px;
             list-style-type: circle;
+            background-color: $color-azul !important;
           }
           ul.dropdown-menu li::marker {
             content: "•";
