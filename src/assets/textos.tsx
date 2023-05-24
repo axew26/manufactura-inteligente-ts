@@ -3,6 +3,7 @@ import { Investigador } from "../types/tarjeta-investigador.type";
 import { Proyecto } from "../types/proyecto.type";
 import { EntidadesFooter } from "../types/footer.type";
 import { ArticuloResultadoModelo } from "../types/articulo-resultado.type";
+import { ParrafoBannerHome } from "../types/hero-banner.type";
 
 export const investigadores: Investigador[] = [
   {
@@ -324,4 +325,10 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
       },
     ]
   },
+];
+
+export const parrafoBannerHome: ParrafoBannerHome[] = [
+  {
+    parrafo: "Dentro de la convocatoria 852-2019 CONVOCATORIA DE PROGRAMAS CONECTANDO CONOCIMIENTO 2019 del Ministerio de Ciencia, Tecnología e Innovación de Colombia, se suscribió el Programa TRANSFORMACIÓN DIGITAL DE LA PRODUCCIÓN DE CEMENTO CONCRETO, donde participan ARGOS, Universidad Pontificia Bolivariana y Universidad EAFIT. El programa está conformado por 3 proyectos que se describen a continuación."
+  }
 ];
