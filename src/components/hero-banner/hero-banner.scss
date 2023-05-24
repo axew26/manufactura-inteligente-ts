@@ -1,0 +1,55 @@
+@import "/src/colores.scss";
+
+div.container-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  img.banner-home-mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex !important;
+      width: 430px;
+      height: 442px;
+    }
+  }
+
+  img.banner-home-desktop {
+    @media (max-width: 768px) {
+      display: none !important;
+    }
+  }
+
+  div.container-informacion {
+    max-width: 50%;
+    position: absolute;
+    top: 65%;
+    left: 5.2%;
+    line-height: 19.36px;
+
+    @media (max-width: 1305px) {
+      font-size: 13px;
+    }
+
+    @media (max-width: 1090px) {
+      line-height: 15px !important;
+      font-size: 10px;
+    }
+
+    @media (max-width: 768px) {
+      line-height: 19.36px !important;
+      font-size: 14px;
+      max-width: 100%;
+      top: 40%;
+      left: 0;
+      padding: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  div.container-banner {
+    width: 430px !important;
+  }
+}
