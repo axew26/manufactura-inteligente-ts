@@ -1,0 +1,100 @@
+@import "../../colores.scss";
+
+div.separador-home {
+  background-color: $color-azul;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 97%;
+    left: 0;
+    background: $color-blanco;
+
+    @media (max-width: 768px) {
+      bottom: 93%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 36%;
+    right: 0;
+    bottom: 59%;
+    left: 0;
+    background: $color-blanco;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  div.contenedor-imagen {
+    z-index: 3;
+    max-width: 455px;
+    width: 100%;
+    height: 389px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: $color-blanco;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 20px;
+
+    @media (max-width: 520px) {
+      max-width: initial;
+      height: auto;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 85%;
+      bottom: 0;
+      left: 0;
+      background: $color-azul-claro;
+    }
+
+    img {
+      max-width: 413px;
+      max-height: 360px;
+      @media (max-width: 768px) {
+        max-width:100%;
+        max-height:none;
+      }
+    }
+  }
+
+  div.contenedor-texto-banner {
+    max-width: 636px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    p {
+      color: $color-blanco;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 595px;
+    }
+  }
+}
