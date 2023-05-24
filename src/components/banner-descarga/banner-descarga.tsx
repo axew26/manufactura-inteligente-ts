@@ -11,15 +11,15 @@ export default function BannerDescarga(props: Record<string, unknown>) {
       <div className="doble-banner-descarga flex flex-col md:flex-row">
         <div
           className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-          style={{ maxWidth: `${banner[0].maxWidth}px` }}
+          style={{ maxWidth: `${banner[0]?.maxWidth}px` }}
         >
-          <div className="contenedor-titulo">
-            <h2 className="text-xl">{banner[0].texto}</h2>
+          <div className="contenedor-titulo flex justify-center md:justify-start">
+            <h2 className="text-xl">{banner[0]?.texto}</h2>
           </div>
           <hr />
           <div className="contenedor-boton">
             <button>
-              <a href={banner[0].urlDescarga} download>
+              <a href={banner[0]?.urlDescarga} download>
                 Descargar
               </a>
             </button>
@@ -30,15 +30,15 @@ export default function BannerDescarga(props: Record<string, unknown>) {
         </div>
         <div
           className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-          style={{ maxWidth: `${banner[1].maxWidth}px` }}
+          style={{ maxWidth: `${banner[1]?.maxWidth}px` }}
         >
-          <div className="contenedor-titulo">
-            <h2 className="text-xl">{banner[1].texto}</h2>
+          <div className="contenedor-titulo flex justify-center md:justify-start">
+            <h2 className="text-xl">{banner[1]?.texto}</h2>
           </div>
           <hr />
           <div className="contenedor-boton">
             <button>
-              <a href={banner[1].urlDescarga} download>
+              <a href={banner[1]?.urlDescarga} download>
                 Descargar
               </a>
             </button>
@@ -51,15 +51,15 @@ export default function BannerDescarga(props: Record<string, unknown>) {
     bannerView = (
       <div
         className="banner-descarga flex flex-col justify-center items-center md:flex-row"
-        style={{ maxWidth: `${banner.maxWidth}px` }}
+        style={{ maxWidth: `${banner?.maxWidth}px` }}
       >
-        <div className="contenedor-titulo flex justify-start">
-          <h2 className="text-xl">{banner.texto}</h2>
+        <div className="contenedor-titulo flex justify-center md:justify-start">
+          <h2 className="text-xl">{banner?.texto}</h2>
         </div>
         <hr />
         <div className="contenedor-boton">
           <button>
-            <a href={banner.urlDescarga} download>
+            <a href={banner?.urlDescarga} download>
               Descargar
             </a>
           </button>

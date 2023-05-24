@@ -1,45 +1,47 @@
 @import "../../colores.scss";
 
 div.banner-descarga {
-    background-color: $color-gris-claro;
-    min-width: 80px;
-    padding: 10px 20px 12px 20px;
+  background-color: $color-gris-claro;
+  min-width: 80px;
+  padding: 8px 15px 9px 15px;
+  width: 100%;
 
-    h2 {
-        margin: 0;
-        width: 100%;
+  h2 {
+    margin: 0;
+    width: 100%;
 
-        @media (max-width:768px) {
-            text-align: center;
-        }
+    @media (max-width: 768px) {
+      text-align: center;
+      max-width: 80%;
     }
+  }
 
-    hr {
-        margin: 8px 15px;
-        @media (max-width:768px) {
-            display: none;
-        }
+  hr {
+    margin: 8px 5px;
+    @media (max-width: 768px) {
+      display: none;
     }
+  }
 }
 
 div.doble-banner-descarga {
-    div.separador-banners {
-        width: 0px;
-        hr {
-            width: 1px;
-            height: 80%;
-            position: relative;
-            background-color: $color-azul;
-            transform: translateY(10%);
-        }
+  div.separador-banners {
+    width: 0px;
+    hr {
+      width: 1px;
+      height: 80%;
+      position: relative;
+      background-color: $color-azul;
+      transform: translateY(10%);
     }
+  }
 
-    @media (max-width:768px) {
-        div.separador-banners {
-            hr {
-                background-color: $color-blanco;
-                height: 15px;
-            }
-        }
+  @media (max-width: 768px) {
+    div.separador-banners {
+      hr {
+        background-color: $color-blanco;
+        height: 15px;
+      }
     }
+  }
 }
