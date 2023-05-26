@@ -166,6 +166,7 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
       urlDescarga: "/",
       maxWidth: 486,
     },
+    urlImagenExtra: "",
   },
   {
     numero:2,
@@ -297,7 +298,8 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
         urlDescarga: "/",
         maxWidth: 486,
       },
-    ]
+    ],
+    urlImagenExtra: "",
   },
   {
     numero: 3,
@@ -324,7 +326,8 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
         urlDescarga: "/",
         maxWidth: 486,
       },
-    ]
+    ],
+    urlImagenExtra: "/Tabla_Ciclo_Vida.svg",
   },
 ];
 

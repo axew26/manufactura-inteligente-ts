@@ -42,6 +42,19 @@ export default function ArticuloResultadoChild(props: Record<string, unknown>) {
             </div>
           </div>
         </div>
+        {articulo?.urlImagenExtra && ( 
+            <div className="contenedor-imagen-extra" style={{ paddingTop: '50px' }}>
+              <img className="imagen-extra" src={articulo.urlImagenExtra} />
+            </div>
+        )}
+        {articulo?.urlImagenExtra && ( 
+            <div className="contenedor-advertencia">
+              <p>Arrastra para la imagen para visualizar todos los datos</p>
+              <div className="recuadro-cursor">
+                <img className="cursor" src="/Cursor.svg" alt="" />
+              </div>
+            </div>
+        )}
         {articulo?.parrafoExtra && (
           <div className="separador separador-articulo-nodos">
             {articulo?.parrafoExtra}

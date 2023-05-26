@@ -7,4 +7,5 @@ export interface ArticuloResultadoModelo {
   parrafo?: JSX.Element;
   parrafoExtra?: JSX.Element;
   banners: BannerModelo | BannerModelo[];
+  urlImagenExtra: string;
 }
