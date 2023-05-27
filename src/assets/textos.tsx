@@ -196,9 +196,9 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
           </thead>
             <tbody>
               <tr>
-                <td><span>Agregado Grueso</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Agregado Grueso</span></td>
                 <td>
-                  <ul>
+                  <ul style={{paddingLeft: '10px', listStyle:'inside'}}>
                     <li>Cantidad</li>
                     <li>Humedad</li>
                     <li>Origen</li>
@@ -206,9 +206,9 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
                 </td>
               </tr>
               <tr>
-                <td><span>Agregado Fino tipo 1</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Agregado Fino tipo 1</span></td>
                 <td>
-                  <ul>
+                  <ul style={{paddingLeft: '10px', listStyle:'inside'}}>
                     <li>Cantidad</li>
                     <li>Humedad</li>
                     <li>Origen</li>
@@ -216,9 +216,9 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
                 </td>
               </tr>
               <tr>
-                <td><span>Agregado Fino tipo 2</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Agregado Fino tipo 2</span></td>
                 <td>
-                  <ul>
+                  <ul style={{paddingLeft: '10px', listStyle:'inside'}}>
                     <li>Cantidad</li>
                     <li>Humedad</li>
                     <li>Origen</li>
@@ -226,32 +226,32 @@ export const articulosResultado: ArticuloResultadoModelo[] = [
                 </td>
               </tr>
               <tr>
-                <td><span>MCS: Caliza Pulverizada y Cenizas volantes</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>MCS: Caliza Pulverizada y Cenizas volantes</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
               <tr>
-                <td><span>Cemento Blanco</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cemento Blanco</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
               <tr>
-                <td><span>Cemento Gris Estructural Max</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cemento Gris Estructural Max</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
               <tr>
-                <td><span>Cemento Gris UG</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cemento Gris UG</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
               <tr>
-                <td><span>Aditivo 2</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Aditivo 2</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
               <tr>
-                <td><span>Aditivo 1</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Aditivo 1</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
               <tr>
-                <td><span>Agua</span></td>
-                <td><span>Cantidad</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Agua</span></td>
+                <td style={{paddingLeft: '10px'}}><span>Cantidad</span></td>
               </tr>
             </tbody>
         </table>

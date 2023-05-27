@@ -88,6 +88,8 @@ div.separador-home {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    position: relative;
+    left: 5%;
     p {
       color: $color-blanco;
       font-family: "Inter";
