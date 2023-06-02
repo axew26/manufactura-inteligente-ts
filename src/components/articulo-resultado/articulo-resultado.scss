@@ -134,7 +134,7 @@ div.contenedor-advertencia {
 @media (max-width: 966px) {
   div.contenedor-advertencia {
     margin-top: 7%;
-    width: 445px;
+    width: 375px;
     height: 130px;
     background-color: $color-verde;
     display: flex;
@@ -166,5 +166,20 @@ div.contenedor-advertencia {
         left: 20%;
       }
     }
+  }
+}
+
+@media(max-width: 650px){
+  th h3{
+    font-size: 12px;
+  }
+  table tbody{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 400px){
+  th h3{
+    font-size: 9px;
   }
 }
